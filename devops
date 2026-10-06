@@ -1,0 +1,94 @@
+DevOps Lesson 2 — Basic Terminal Commands
+Beginner
+Windows 10
+15–20 minutes
+
+Today, we'll learn 4 basic commands that help you navigate and manage folders. These skills will also help when you start working with Linux servers.
+
+We'll work only inside your DevOps-Learning folder.
+
+Step 1 — Check where you are//
+
+Open VS Code, open your DevOps-Learning folder, then select Terminal → New Terminal.
+
+Type:
+
+Get-Location
+What does it do?
+
+It displays your current directory — the folder where your terminal is working.
+
+For example:
+
+C:\Users\YourName\Desktop\DevOps-Learning
+Why do we use it?
+
+Before running commands, you should know your current location. This helps prevent accidentally creating, deleting, or modifying files in the wrong folder.
+
+Your turn
+
+Run Get-Location. Confirm that the path ends with DevOps-Learning.
+
+Step 2 — List files and folders //
+
+Type:
+
+dir
+What does it do?
+
+It lists the files and folders in your current directory.
+
+You should see your linux-practice folder if you created it in the previous lesson.
+
+DevOps connection: You'll frequently list directories to find configuration files, application logs, scripts, and other files.
+
+Step 3 — Move between folders  //
+
+The command is:
+
+cd linux-practice
+
+cd means Change Directory.
+
+It moves your terminal into the linux-practice folder.
+
+To confirm, run:
+
+Get-Location
+
+Your path should now end with:
+
+DevOps-Learning\linux-practice
+
+To go back to the parent folder, run:
+
+cd ..
+
+The .. means the parent directory — one level up.
+
+Step 4 — Create a folder   //
+
+Let's create a folder for practising Linux commands.
+
+First, make sure you're inside DevOps-Learning\linux-practice.
+
+Then run:
+
+mkdir commands
+
+mkdir means Make Directory. It creates a new folder named commands.
+
+Verify it by running:
+
+dir
+
+// You should see the new commands folder. //
+
+mkdir — creates a folder.
+
+dir — lists files and folders.
+
+cd — moves into a folder.
+
+Get-Location — shows where you are.
+
